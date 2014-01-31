@@ -1,7 +1,7 @@
 gomesos
 =======
 
-A fork and reorganization of the https://github.com/mesosphere/mesos-go project
+A fork and reorganization of the https://github.com/mesosphere/mesos-go repository so that it's buildable via the go build system.
 
 To install this project just do:
 
