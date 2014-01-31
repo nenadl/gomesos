@@ -4,9 +4,9 @@ import (
 	"code.google.com/p/goprotobuf/proto"
 	"flag"
 	"fmt"
+	"github.com/nenadl/gomesos"
 	"os"
 	"path/filepath"
-	"servers/gomesos"
 	"strconv"
 )
 

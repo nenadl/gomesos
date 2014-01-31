@@ -3,7 +3,7 @@ package main
 import (
 	"code.google.com/p/goprotobuf/proto"
 	"fmt"
-	"servers/gomesos"
+	"github.com/nenadl/gomesos"
 )
 
 func main() {
