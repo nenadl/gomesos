@@ -103,7 +103,7 @@ func serialize(pb proto.Message) (C.ProtobufObj, error) {
 	var dataObj C.ProtobufObj
 	data, err := proto.Marshal(pb)
 	if err != nil {
-		return dataObj, errors.New("Could not serialize message")
+		return dataObj, err
 	}
 
 	dataObj.data = unsafe.Pointer(&data[0])
@@ -117,7 +117,7 @@ func serializeItem(pb proto.Message) ([]byte, error) {
 
 	data, err := proto.Marshal(pb)
 	if err != nil {
-		return ret, errors.New("Could not serialize request")
+		return ret, err
 	}
 
 	length := uint64(len(data))
